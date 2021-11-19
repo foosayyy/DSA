@@ -52,5 +52,5 @@ int main(){
 		cout<<"Non-Cyclic Graph.";
 
 
-	return 0;
+	return 0; 
 }
