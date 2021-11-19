@@ -40,7 +40,7 @@ int main(){
 	addEdge(adj,3,4);
 	addEdge(adj,2,4);
 	
-	cout<<"Following is Breadth for search Traversal:\n";
+	cout<<"Following is Breadth first search Traversal:\n";
 	bfs(adj,v,0);
 
 	return 0;
