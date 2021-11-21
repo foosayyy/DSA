@@ -18,7 +18,7 @@ void bfs(vector<int> adj[],int v, int s){
 		for(int v: adj[u]){
 			if(visited[v] == false){
 				visited[v] = true;
-				q.push(v);
+				q.push(v); 
 			}
 		}
 	}
