@@ -36,5 +36,5 @@ int main(){
 
    cout<<PrimsMST(graph);
 
-   return 0;
+   return 0; 
 }
