@@ -10,7 +10,7 @@ int insert(int a[5], int n, int cap, int key, int pos){
 		a[i+1] = a[i];
 	}
 	a[indx] = key;
-	return 0;
+	return n+1;
 }
 
 int main(){
