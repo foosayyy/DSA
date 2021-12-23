@@ -2,27 +2,20 @@
 using namespace std;
 
 int nodupes(int a[], int n){
-	int res =1;
+	int res = 0;
 	for(int i=0; i<n; i++){
-		if(a[res-1] != a[i]){
-			a[res] = a[i];
+		if(a[res] != a[i]){
 			res++;
+			a[res] = a[i];
 		}
 	}
-	return res;
+	return res+1;
 }
+
 int main(){
-	int a[] = {10, 20, 20, 30, 30, 30};
-	int n = 6;
-	cout<<"Before removal:\n";
-	for(int i=0; i<n; i++)
+	int a[] = {1,1,2};
+	int n = 3;
+	for(int i=0; i<nodupes(a,n); i++)
 		cout<<a[i]<<" ";
-
-	int sol = nodupes(a,n);
-
-	cout<<"\nAfter removal:\n";
-	for(int i=0; i<sol; i++)
-		cout<<a[i]<<" ";
-
 	return 0;
 }
